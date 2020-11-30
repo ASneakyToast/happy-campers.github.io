@@ -1,10 +1,11 @@
 ---
 ---
 @import "variables"
+@import "mixins/image-masonry"
 
 .post
   background-color: $primary
-  padding: $space-md $space-xl
+  padding: $space-md $space-lg
 
   &-image
     width: 100%
@@ -28,3 +29,5 @@
       text-align: left
       color: $secondary
       padding: $space-md 0 $space-sm
+
+  &__related_images

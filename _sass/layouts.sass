@@ -1,0 +1,17 @@
+.container
+  padding: $space-lg
+  background-color: $primary
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto
+  gap: 24px 16px
+
+  &--secondary
+    background-color: $secondary
+
+  &--wide
+    padding: $space-xs $space-xs
+
+@media (min-width: $bkpt-po)
+  h1, h2, h3
+    text-align: center

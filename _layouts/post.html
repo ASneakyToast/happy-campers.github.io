@@ -1,9 +1,16 @@
 ---
 layout: default
+author: joel
+landing: false
+media: false
 ---
 <link rel="stylesheet" href="/assets/css/post.css">
-<p class="post-image">Testing image</p>
 <div class="post">
+  {% if page.landing %}
+    <img src="{% asset_path landing.jpg %}" alt="landing page image">
+  {% elsif page.media %}
+  <!-- TODO: use random img from photos of that day -->
+  {% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-meta">
     <h2 class="post-flavor">{{ page.flavor-text }}</h2>
@@ -19,15 +26,5 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+  
 </div>
-
-{% for media in site.static_files %}
-{% assign short_url = page.date | date: "%Y-%m-%d" %}
-  {% if media.name contains short_url %}
-    <style>
-      .post-image {
-        background-image: url("{{ site.url | append:media.path }}");
-      }
-    </style>
-  {% endif %}
-{% endfor %}

@@ -2,6 +2,7 @@
 ---
 @import "fonts"
 @import "variables"
+@import "mixins/buttons"
 
 .landing
   height: 592px
@@ -15,38 +16,58 @@
   position: relative
   z-index: -1
   
-  &-text
+  &__text
     color: white
     text-align: center
-    & p 
-      font-family: Fugaz
-      padding: $space-sm
-      margin: 0
-    &-flavor
-      font-size: 32px
-    &-names
-      font-size: 24px
-      opacity: 70%
+
+  &__flavor 
+    font-family: Fugaz
+    padding: $space-sm
+    margin: 0
+    font-size: 32px
+
+  &__names
+    font-size: 24px
+    opacity: 70%
+    font-family: Fugaz
 
 .about
-  padding: $space-xl $space-xl
-  background-color: $primary
-
-  &-flavor
-    margin: $space-lg $space-lg
-    padding: $space-md
+  text-align: center
+  
+  &__flavor
     background-color: $secondary
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)
-    font-size: 24px
-    font-family: Fugaz
-    color: $black
+    box-shadow: $shadow-4dp
+    padding: $space-md $space-lg
+    margin: auto
 
-  &-description
-    margin: $space-lg $space-lg
-    color: $secondary
+  &__description
+    align-self: center
+  
+.featured
+  &__posts
+    display: grid
+    row-gap: 16px
 
-  &-link
-    margin: $space-lg $space-lg
-    text-align: right
-    & a
-      color: $secondary
+  &__post
+    border-radius: 3px
+    box-shadow: $shadow-2dp
+    background-color: $white
+    border-bottom: 4px solid $secondary
+    padding: 0
+    & img
+      border-radius: 3px 3px 0 0
+      width: 100%
+      height: 100%
+    & h4
+      color: $gray
+      padding: $space-xs 0
+    & p
+      color: $gray
+      background-color: $white
+
+@media screen and (max-width: $bkpt-tb) and (orientation: landscape)
+  .about
+    grid-template-columns: 1fr 1fr
+
+    &__link
+      grid-column: 1 / span 2

@@ -6,22 +6,32 @@ $secondary: #EEE0CB
 $red: #A4493E
 $orange: #C07444
 $yellow: #EDB857
+$overlay-white: rgba(255,255,255,0.63)
+$overlay-black: rgba(0,0,0,0.63)
 
 
 $space-xs: 4px
 $space-sm: 12px
 $space-md: 28px
-$space-lg: 36px
+$space-lg: 32px
 $space-xl: 48px
+
+
+$bkpt-po: 360px
+$bkpt-tb: 768px
+$bkpt-ds: 1200px
+
+
+$shadow-2dp: 0 2px 4px 0 rgba(0,0,0,0.5)
+$shadow-4dp: 0 4px 8px 0 rgba(0,0,0,0.5)
 
 
 h1, h2, h3, h4, h5, h6, p, li
   padding: $space-xs
   margin: 0
 
-h1, h2, h3
+h1, h2, h3, h4
   font-family: Fugaz
-  text-align: center
 
 h1
   font-size: 32px
@@ -37,14 +47,14 @@ h3
   color: $gray
 
 h4
-  font-size: 24px
+  font-size: 20px
   color: $secondary
+  padding: $space-sm 0 $space-xs
 
-p, li
+p, li, a
   font-family: "Open Sans"
   color: $white
-
-p
-  font-weight: light
-
+  font-weight: 500
+  font-size: 18px
+  padding: $space-xs 0
 
