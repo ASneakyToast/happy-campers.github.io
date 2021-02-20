@@ -1,0 +1,41 @@
+h1 { font-size: 32px; font-family: Fugaz; }
+
+h2 { font-size: 24px; font-family: Fugaz; }
+
+h3 { font-size: 18px; font-family: Fugaz; }
+
+h4 { font-size: 24px; font-family: Fugaz; }
+
+h6, button { font-size: 18px; font-family: "Open Sans"; }
+
+p { font-size: 18px; font-family: "Open Sans"; font-weight: lighter; }
+
+li { font-size: 16px; font-family: "Open Sans"; font-weight: lighter; }
+
+hr { border: none; border-top: 1px solid #EEE0CB; width: 100%; }
+
+.container { display: grid; grid-gap: 24px; padding: 24px; }
+
+.container--well { grid-gap: 16px; padding: 16px; }
+
+article.card { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); border-radius: 3px; }
+
+.container-small { display: grid; grid-gap: 16px; padding: 16px; }
+
+.container-inline { display: flex; place-content: center; gap: 8px; }
+
+.map__title { margin: 32px; }
+
+.map__meta { list-style: none; }
+
+.map__meta_item { display: inline-block; }
+
+.map__drawing { width: 100%; }
+
+.map__destinations { list-style: none; }
+
+.destination-item { text-align: center; text-decoration: none; }
+
+.destination-item__image { border-radius: 3px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=map.css.map */

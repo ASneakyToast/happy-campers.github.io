@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "destination.css",
+	"sources": [
+		"destination.sass"
+	],
+	"sourcesContent": [
+		".meta {\n  padding: 12px 0;\n  & h2 {\n    padding: 12px 0; }\n  & h3 {\n    padding: 4px 0; } }\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,KAAK,CAAC,EACJ,OAAO,EAAE,MAAM,GAIM;;AALvB,AAEE,KAFG,CAED,EAAE,CAAC,EACH,OAAO,EAAE,MAAM,GAAG;;AAHtB,AAIE,KAJG,CAID,EAAE,CAAC,EACH,OAAO,EAAE,KAAK,GAAG"
+}
