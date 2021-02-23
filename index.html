@@ -15,11 +15,45 @@
 {"url":"/","headline":"Home","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYX9805ST9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WYX9805ST9');
+    </script>
   </head>
+
   <body>
-    <div class="wrapper">
-      <div class="header">
-  <div class="actions">
+    <div id="wrapper">
+      <nav id="drawer" class="hidden">
+  <div class="offclick"></div>
+  <div class="container theme--primary">
+    <section class="well"> 
+      <a href="/roadtrip/">
+        <p>road trip</p>
+      </a>
+      <a href="/map/">
+        <p>map</p>
+      </a>
+      <a href="/memories/">
+        <p>memories</p>
+      </a>
+      <a href="/eco-life/">
+        <p>eco-life</p>
+      </a>
+      <a href="/recipies/">
+        <p>recipies</p>
+      </a>
+    </section>
+  </div>
+</nav>
+
+
+      <header class="header">
+  <div class="actions theme--primary">
     <ul class="actions__social_list">
       <li class="actions__social_item">
         <svg class="icon">
@@ -36,6 +70,8 @@
         </svg>
       </li>
     </ul>
+    
+    <button id="drawer-button" class="primary">Menu</button>
   </div>
 
   <h1 class="header__title">Happy Campers</h1>
@@ -79,9 +115,10 @@
 
   
  
-</div>
+</header>
 
-      <div class="content">
+
+      <main class="content">
         <!--
 <script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
@@ -117,7 +154,7 @@
     Just two 21 year old enviromentally conscious kids road trippin' around the US, in our 1980 self-renovated tiny home trailer! For one full year we will be seeing as many beautiful sites as we can in this sublime part of the world.
   </p>
  
-  <button class="secondary">
+  <button class="secondary wide">
     <a href="/journal/how_our_dreams_turned_into_our_reality/">
       Read our full story
     </a>
@@ -132,7 +169,7 @@
   
     
 
-<a href="/2020/10/09/the_7_rs_of_sustainability/">
+<a href="/eco/2020/10/09/the_7_rs_of_sustainability/">
   <article class="card post-card">
     
       <section class="post-card__img_area">
@@ -147,7 +184,7 @@
   
     
 
-<a href="/2020/10/09/sustainable_living/">
+<a href="/eco/2020/10/09/sustainable_living/">
   <article class="card post-card">
     
       <section class="post-card__img_area">
@@ -165,7 +202,7 @@
 
   
 
-  <button class="primary">
+  <button class="primary wide">
     <a href="/blog">see all posts</a>
   </button>
 </div>
@@ -188,7 +225,7 @@
     </svg>
   </section>
 
-  <a href="/2020/11/17/Day-103/">
+  <a href="/eco/2020/10/09/the_7_rs_of_sustainability/">
   <article class="card post-item">
     <div class="post-item__media">
       
@@ -200,16 +237,16 @@
     </div>
 
     <section class="post-item__meta well">
-      <h4>Travel Day 103</h4>
-      <p>Today we woke up at Three Rivers Casino in Florance, Oregon. Our trailer battery was full thanks to the free electrical hookups provided by the casino parking.</p>
+      <h4>the 7 r's of sustainability</h4>
+      <p><img src="/assets/flowers_and_herbs.jpg" alt="flowers and herbs" /></p>
 
     </section>
   </article>
 </a>
 
   
-  <button class="primary eco__link">
-    <a href="/eco.html">
+  <button class="primary wide">
+    <a href="/eco/">
       eco-based posts
     </a>
   </button>
@@ -307,14 +344,15 @@
     
   </section>
   
-  <button class="primary">
+  <button class="primary wide">
     <a href="/recipies/">
       see all recipies
     </a>
   </button>
 </div>
 
-      </div>
+      </main>
+
       <footer id="footer" class="">
   <section class="social container">
     
@@ -345,4 +383,8 @@
 
     </div>
   </body>
+  
+  <footer>
+    <script src="/assets/js/menu.js"></script>
+  </footer>
 </html>

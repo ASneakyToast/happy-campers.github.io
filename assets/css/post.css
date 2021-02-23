@@ -22,11 +22,13 @@ div.theme--primary blockquote { background-color: #EEE0CB; color: #466346; }
 
 div.theme--primary > section.well { border-top: 1px solid #93af93; border-bottom: 1px solid #93af93; }
 
-div.theme--primary > button.primary { background-color: #EEE0CB; border: #a79d8e; color: #466346; }
+div.theme--primary button.primary { background-color: #EEE0CB; border: #a79d8e; color: #466346; }
 
-div.theme--primary > button.secondary { color: #f3e9db; }
+div.theme--primary button.secondary { color: #f3e9db; }
 
-div.theme--primary article.card { background-color: #f3e9db; color: #466346; border-bottom: 4px solid #EEE0CB; }
+div.theme--primary article.card { background-color: #f3e9db; color: #466346; }
+
+div.theme--primary div.icon-circle { background-color: #EEE0CB; color: #93af93; }
 
 div.theme--secondary { background-color: #EEE0CB; color: #466346; }
 
@@ -40,7 +42,7 @@ div.theme--secondary > button.primary { background-color: #648D64; border: #4663
 
 div.theme--secondary > button.secondary { color: #466346; }
 
-div.theme--secondary article.card { background-color: #f3e9db; color: #466346; border-bottom: 4px solid #EEE0CB; }
+div.theme--secondary article.card { background-color: #f3e9db; color: #466346; }
 
 div.theme--secondary div.icon-circle { background-color: #648D64; color: #f3e9db; }
 
@@ -48,9 +50,11 @@ div.theme--secondary div.icon-circle { background-color: #648D64; color: #f3e9db
 
 .button-secondary { text-decoration: underline; font-weight: 500; }
 
-button.primary { padding: 8px 16px; margin: 0 24px; border-radius: 12px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
+button.primary { padding: 8px 16px; border-radius: 12px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
 button.secondary { text-decoration: underline; font-weight: 500; border: none; background: none; }
+
+button.wide { margin: 0 auto; width: 77%; }
 
 .icon { max-width: 24px; max-height: 24px; display: block; box-shadow: none; fill: currentColor; }
 
@@ -63,6 +67,8 @@ button.secondary { text-decoration: underline; font-weight: 500; border: none; b
 .nota-icon-primary { background: #ffc0c0; width: 100px; height: 100px; border-radius: 50%; text-align: center; line-height: 100px; vertical-align: middle; }
 
 .section-well { min-height: 30vh; display: flex; flex-direction: column; justify-content: center; vertical-align: middle; }
+
+section.playmat { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 8px; }
 
 section.well { display: flex; flex-direction: column; justify-content: center; vertical-align: middle; gap: 8px; padding: 16px; }
 
@@ -102,7 +108,7 @@ article.card { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); border-radius: 3px; }
 
 .image-row img { flex: 1; min-width: 0; }
 
-.wide { margin-right: -48px; margin-left: -48px; }
+.wide { margin-right: -24px; margin-left: -24px; }
 
 .wide > img { border-radius: 0; }
 
